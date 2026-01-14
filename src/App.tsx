@@ -379,7 +379,7 @@ export default function App() {
                   momentos juntos. La amistad es un viaje, y me alegra muchísimo
                   que el nuestro siga despegando.
                 </p>
-                <p className="font-medium">Feliz cumpleaños.</p>
+                <p className="font-medium">Feliz cumple, piloto</p>
               </div>
             </CardContent>
           </Card>
