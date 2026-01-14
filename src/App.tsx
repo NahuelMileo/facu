@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
-import { Plane, Car, Copy, Check, X, Play } from "lucide-react";
+import { Plane, Car, X, Play } from "lucide-react";
 import { useState } from "react";
 import imagen1 from "../src/assets/a (1).jpeg";
 import imagen2 from "../src/assets/a (2).jpeg";
@@ -62,7 +62,6 @@ const photos = [
 export default function App() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const [copied, setCopied] = useState(false);
   const [uploadedVideos] = useState<{ url: string }[]>([
     { url: video1 },
     { url: video2 },
@@ -72,17 +71,6 @@ export default function App() {
   ]);
 
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
-
-  const handleShare = async () => {
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (err) {
-      console.log("Failed to copy");
-    }
-  };
 
   const scrollToGallery = () => {
     document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" });
