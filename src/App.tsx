@@ -341,7 +341,7 @@ export default function App() {
             <CardContent className="pt-8 pb-8 px-6 md:px-10">
               <div className="space-y-4 text-foreground/90 leading-relaxed">
                 {/* TODO: Replace with your personalized letter */}
-                <p>Facu, mi hermano:</p>
+                <p>Facu, mi hermano de otra madre:</p>
                 <p>
                   No es fácil poner en palabras todos estos años de amistad.
                   Desde la escuela hasta el día de hoy has sido una constante en
